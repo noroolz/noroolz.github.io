@@ -12,7 +12,7 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- script: Buildtest
+- script: echo `hostname`
   displayName: Buildtest
 
 - script: |
@@ -21,5 +21,5 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-    echo `hostname`
-  displayName: 'Buildtest'
+    echo "This is another step"
+  displayName: 'anotherstep'
