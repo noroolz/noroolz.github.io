@@ -12,8 +12,6 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- script: echo `hostname`
-  displayName: Buildtest
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
@@ -21,5 +19,5 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-    echo "This is another step"
-  displayName: 'anotherstep'
+    apt-get install docker-ce -y
+  displayName: 'install docker'
